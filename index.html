@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="./fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+
+    <!--Using FontAwesome to acquire the icons, (telling myself the truth, i honestly do not fully understand how this works, but i used it afterall!----------->
+    <script defer src="./fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/js/all.js"></script>
+
+</head>
+<body>
+    <section>
+
+    <!-- Navigation---------------------------------------->
+
+            <nav id="details">
+                <!--logo-->
+                <a href="#" class="logo"> Portfolio</a>
+                <!--menu-->
+                <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#working">My Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+
+
+                </ul>
+            </nav>
+
+        <!--text------------------------------->
+
+            <div class="text-container">
+            <p> Hello there,</p>
+            <p> I'm SAMUEL YUSUF</p>    
+            <P> UI/UX Designer<br>Front-End Developer</P>
+            <a href="#social"><button class="hire-btn">Hit me Up</button></a>
+            <a href="#working"><button class="works-tab">Past Works</button></a>
+            </div>
+
+<!-- images------------------------------------>
+
+    <img src="images/copy.jpeg" class="person" alt="person">
+
+
+    </section>
+
+    <!-- About Section---------------------------------------------->
+
+        <div class= "about-container" id="about">
+             <!-- image------------------>
+            <img src="./images/fine.jpeg">
+            <!-- text--------------->
+            <div class= "about-text">
+            
+            <p>About me</p>
+            <br>
+            <p>I am a UI/UX Designer with rougly a year's knowledge seeking to expand my knowledge in how tech works, with reference to Web Development
+                and other aspect. Currently learning as a Front-end developer. </p>
+            <p class="stack">Stack</p>
+            <ul style="list-style-type:disc;">
+                <li> Front-End Web Development</li>
+                <li> User Interface Design</li>
+            </ul>
+            
+        </div>
+        </div>
+
+        <!--Services----------------------------------------->
+
+        <div class="works" id="working">
+
+        <!--services text------------------------------------------------->
+
+        <div class="works-text">       
+        <p> Past Works</p>
+        <p> Design & Development</p>
+        <p> Softwares i built quite recently, these things i do most times to keep the hands busy</p>
+        </div>
+
+        <!--Boxes------------------------------------------------------------->
+
+        <div class="box-container">
+      <!-- First Box------------>      
+            <div class="box-1"></div>
+    <!-- Second Box------------>
+            <div class="box-2"></div>
+<!-- Third Box------------>
+            <div class="box-3"></div>
+
+        </div>
+        </div>
+
+
+    <!---contact me---------------------------------------------------->
+
+        <div class="contact-container" id=""> 
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <div class="title"> Contact Me</div> 
+
+                <div class="input-fields">
+                    <div class="items">
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                    </div>
+                <div class="items">
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                    </div>
+                  <div class="Items">  
+                <label for="country">Location</label><br>
+                <select id="country" name="country"required>
+                  <option value="australia">Abuja</option>
+                  <option value="canada">Lagos</option>
+                  
+                </select><br>
+                </div>
+                <div class="items">
+                <label for="subject">Subject</label><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                </div>
+                <input type="submit" name="contact" value="Submit">
+              </form>
+            </div>
+        </div>
+
+
+<!-- The newsletter has an animation feature, when the mouse hovers,
+    The actual length would appear!-->
+
+ <div class="new-container">
+
+    <form name="subscribe" method="POST" data-netlify="true">
+
+        <h1> Join Our Newsletter</h1>
+        <p> Join in and Discover Unlimited Creativity</p>
+        <div class="email-box">
+        <input class="tbox" type="email" name="subscribe" value="" placeholder="Enter Your Email">
+ 
+
+        <input class="bot" id="bot" type="submit" name="subscribe" value="Subscribe">
+
+    </div>
+
+</form>
+ </div>
+
+<!--footer----------------------------->
+
+        <footer>
+            <p>&#169; Samuel Yusuf, 2020.</p>
+            <p>Delivered like it was crafted in Heaven!</p>
+
+<!--social--------------------------------->
+
+            <div class="social-icons" id="social"> 
+                
+                <a href="https://twitter.com/mr_sammi_el" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Sammi-code" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/mr_sammi_el" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://https://web.facebook.com/smartai95" target="_blank"><i class="fab fa-linkedin"></i></a>
+                
+            </div>
+        </footer>
+
+        <!-- attached social bar-------------------------------------->
+        
+
+        <div class="social-icons-b">
+                
+            <a href="https://twitter.com/mr_sammi_el" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Sammi-code" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/mr_sammi_el" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://https://web.facebook.com/smartai95" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+            
+
+
+        </div>
+  
+
+</body>
+</html>

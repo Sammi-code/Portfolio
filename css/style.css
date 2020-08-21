@@ -1,0 +1,602 @@
+@charset "utf-8";
+/*CSS Document*/
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #f6f5f5;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{ 
+    width: 100%;
+    height:95vh;
+    background-image: url("../images/bg8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #96B07D;
+    box-shadow: -11px -11px 20px rgba(255, 255, 255, 0.272044), 
+    /*-8px -40px 22px rgba(246, 251, 255, 0.384288),*/ 
+    -8px 0px 8px rgb(255, 172, 48),
+    19px 21px 50px rgba(255, 185, 81, 0.856);
+    padding: 0px 5%;
+    
+    
+}
+
+nav ul{
+
+    display: flex;
+}
+
+nav ul li a {
+
+    margin: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fbfbfb;
+    font-size: 15px;
+    font-weight: 700;
+    
+    
+}
+
+a.active{
+    color: #F9B04A;
+}
+
+nav ul li a:hover{
+    color: #F9B04A;
+}
+
+.logo{
+    font-family: RoadTest;
+    color: #000000;
+    font-size: 22px;
+}
+
+.active{
+    font-weight: bold;
+    color: #2d2a2a;
+}
+
+.text-container p:nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #ffbe64;
+    font-size: 22px;
+}
+
+.text-container p:nth-child(2){
+    font-family: cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FFF9FD;
+    font-size: 45px;
+}
+
+.text-container p:nth-child(3){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffbe64;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.text-container p{
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+.text-container{
+    position: absolute;
+    right: 13%;
+    top: 42%;
+    transform: translate(-13%, -42%);
+}
+
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius:10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;    
+}
+
+.hire-btn{
+    color: #000000;
+    background-color: #ffbe64;
+    
+}
+
+.works-tab{
+    background-color: #000000;
+    color: #ffbe64;
+    border: none;
+}
+
+button:active{
+    transform:scale(1.1);
+}
+
+.person{
+    height: 560px;
+    width: 500px;
+    position: absolute;
+    border-radius: 40px;
+    bottom: 5px;
+    left: 500px;
+    transform:translateX(-70%);
+    filter: drop-shadow(-11px -11px 20px rgba(150, 176, 125, 0.272044));
+    filter: saturate(130%);
+    box-shadow: -11px -11px 20px rgba(150, 176, 125, 0.272044), 
+    /*-8px -40px 22px rgba(246, 251, 255, 0.384288),*/ 
+    -8px 0px 8px rgba(150, 176, 125, 0.50254),
+    19px 21px 50px rgba(150, 176, 125, 0.727846);
+}
+
+
+.about-container{
+    width: 80%;
+    height: 440px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    /* Neumorphic box shadows*/
+    box-shadow: -11px -11px 20px rgba(150, 176, 125, 0.272044), 
+    /*-8px -40px 22px rgba(246, 251, 255, 0.384288),*/ 
+    -8px 0px 8px rgba(150, 176, 125, 0.50254),
+    19px 21px 50px rgba(150, 176, 125, 0.727846);
+    display: flex;
+    margin: -3% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-container img{
+    height: 250px;
+    position: absolute;
+    border-radius: 20px;
+    left: 80%;
+    transform:translateX(-70%);
+    filter: drop-shadow(-11px -11px 20px rgba(150, 176, 125, 0.272044));
+    filter: saturate(150%);
+    box-shadow: -11px -11px 20px rgba(150, 176, 125, 0.272044), 
+    /*-8px -40px 22px rgba(246, 251, 255, 0.384288),*/ 
+    -8px 0px 8px rgba(150, 176, 125, 0.50254),
+    19px 21px 50px rgba(150, 176, 125, 0.727846);
+}
+
+.about-text{
+    width: 800px;
+    right: 40%;
+
+}
+/* There's a mix up here about how this whoe nth:child things work, andd its hella confusing
+But i sort of used a tweak here and it worked, i intend on working on these issues later to 
+learn best practice */
+
+.about-text p:nth-child(1){
+    color: #403e3e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    line-height: 0px;
+}
+
+/*Had to use a new class name "Stack" to over-ride what was causing the issue, though i couldn't
+really identify the issue*/
+
+.stack{
+    color: #3e3d3d;
+    font-size: 13px;
+    font-family: cursive;
+    font-weight: bold;
+    line-height:5px;
+}
+
+/*Here nth-child(3) now takes the second position and the confusion  begins*/
+
+.about-text p:nth-child(3){
+    color: #7e7d7d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 400px;
+}
+
+
+li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.about-text button{
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: calibri;
+    background-color: #262525;
+}
+
+.works{
+    height: 600px;
+    background-color: #FFFFFF;
+    padding: 2% 10% 0px 10%
+}
+
+.works-text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 30px;
+    line-height:0px;
+}
+.works-text p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 15px;
+    line-height:5px;
+}
+.works-text p:nth-child(3){
+    font-family: calibri;
+    color: #7e7d7d;
+}
+
+.works-text{
+    width: 500px;
+    margin: 50px 0px;
+}
+
+.box-1,.box-2,.box-3{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-between
+
+}
+
+.box-1{
+    background-image: url("../images/onti.png");
+    border-radius: 20px;
+}
+ 
+.box-2{
+    background-image: url("../images/twoti.png");
+    border-radius: 20px;
+}
+ 
+.box-3{
+    background-image: url("../images/threeti.png");
+    border-radius: 20px;
+}
+
+
+.contact-container{
+    width:100%;
+    height:700px;
+    background-image: url("../images/project\ in\ your\ mind.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+
+label{
+    color:  #ffbe64;
+
+}
+
+.title{
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+    color:  #ffbe64;
+}
+
+input[type=text], select, textarea {
+    background: transparent;
+    width: 500px;
+    padding: 12px 8px;
+    color:  #ffbe64;
+    border: 0;
+    border: 1px solid  #ffbe64;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    resize: vertical;
+    size: "7";
+  }
+  
+  input[type=submit] {
+    background-color: #96B07D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 10px;
+    justify-content: center;
+  }
+  
+  input[type=text]::placeholder{
+      color: #575757;
+  }
+  
+  select{
+    color:#ffbe64;
+  }
+  select option { color: black; }
+
+  input[type=submit]:hover {
+    background-color: #ffbe64;
+  }
+
+
+
+
+.new-container{
+    padding: 80px 40px;
+    text-align: center;
+    color: white;
+}
+
+
+ 
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.email-box i,
+.email-box svg{
+    background: #96B07D;
+    width: 60px;
+    line-height: 40px;
+}
+
+.tbox, .bot{
+    border: none;
+    outline: none;
+}
+
+.tbox{
+    width: 0px;
+    transition: 1s;
+
+}
+
+.email-box:hover > .tbox,.tbot:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+
+
+.new-container h1, p{
+    color:  #F9B04A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+footer{
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+footer p{
+    font-family: calibri;
+}
+
+footer p:nth-child(1){
+    font-weight: bold;
+    color:#191919;
+    line-height:10px;
+    font-size: 20px;
+}
+footer p:nth-child(2){
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 600px;
+    text-align: center;
+
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e3e3;
+    margin: 20px 10px;
+    border-radius:50%;
+    box-shadow: inset -6px -3px 5px rgba(255, 255, 255, 0.750601), 
+    inset 3px 6px 6px #C3D7E7, 
+    inset 4px 2px 6px #B1C5D5, 
+    inset 0px 2px 4px #C8D4E2;
+}
+
+.social-icons{
+    display: flex;
+}
+.copyright{
+    color: #565555;
+    font-size: 13px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform:translateX(-50%);
+}
+
+.social-icons i,
+.social-icons svg,
+.social-icons-b i,
+.social-icons-b svg{
+    color: #96B07D;
+   
+} 
+
+.social-icons a:hover,
+.social-icons a:hover svg,
+.social-icons-b a:hover,
+.social-icons-b a:hover svg
+{ 
+    background-color:#96B07D;
+    color:  #F9B04A;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
+}
+
+.social-icons a:hover i,
+.social-icons-b a:hover i,
+.social-icons a:hover svg
+.social-icons-b a:hover svg{
+    color:#F9B04A;
+    transition: all ease 0.5s;
+   
+}
+
+.social-icons-b{
+    position: fixed;
+    top: 50%;
+    right:0px;
+    transform: translateX(-50%);
+  
+}
+
+.social-icons-b a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 5px;
+    line-height: 0px;
+    background-color:  #e6e3e3;
+    border-radius: 20px;
+    box-shadow: inset -6px -3px 5px rgba(255, 255, 255, 0.750601), 
+    inset 3px 6px 6px #C3D7E7, 
+    inset 4px 2px 6px #B1C5D5, 
+    inset 0px 2px 4px #C8D4E2; 
+
+}
+
+.social-icons-b i{
+    color:#F9B04A;
+    font-size:20px;
+}
+
+
+@media(max-width:1000px){
+    *{
+        box-sizing: border-box;
+    }
+
+    .person{
+        height:460px;
+        left: 600px;
+        transform: translateX(70%);  
+    }
+
+    .text-container{
+        top: 46%;
+    }
+    .text-container button{
+        margin: 5px;
+    }
+
+    .about-container{
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .about-container img{
+        height: 200px;
+    }
+
+    .about-text{
+        width: 400px;
+    }
+    .about-text p:nth-child(1){
+        font-size: 20px;
+    }
+    .about-text p:nth-child(2){
+        font-size: 10px;
+    }
+    .about-text p:nth-child(3),
+    .about-text p:nth-child(4){
+        font-size: 14px;
+    }
+    .works{
+        padding: 2% 5% 0px 5%;
+    }
+
+    .box-container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .works{
+        height: auto;
+    }
+
+    .box-1,.box-2, .box-3{
+        flex-grow: 1;
+        margin: 10px;
+    }
+
+   
+
+}
+
