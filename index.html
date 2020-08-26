@@ -17,14 +17,21 @@
 
     <!-- Navigation---------------------------------------->
 
-            <nav id="details">
+            <nav id="navbar">
                 <!--logo-->
-                <a href="#" class="logo"> Portfolio</a>
+                <h1 class="Logo">
+                 <span class="text-primary">
+                    Portfolio
+                 </span>
+                 </h1>
+                    
                 <!--menu-->
                 <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#working">My Works</a></li>
+                <li><a href="#what">What i Do</a></li>
+                <li><a href="#skill">Skills</a></li>
                 <li><a href="#contact">Contact Me</a></li>
 
 
@@ -58,7 +65,7 @@
             
             <p>About me</p>
             <br>
-            <p>I am a UI/UX Designer with rougly a year's knowledge seeking to expand my knowledge in how tech works, with reference to Web Development
+            <p>I am a UI/UX Designer with roughly a year's knowledge seeking to expand my knowledge on how tech works, with reference to Web Development
                 and other aspect. Currently learning as a Front-end developer. </p>
             <p class="stack">Stack</p>
             <ul style="list-style-type:disc;">
@@ -69,7 +76,72 @@
         </div>
         </div>
 
-        <!--Services----------------------------------------->
+
+        <!--What i do Section--------------------->
+
+        <section id="what" class="bg-light py1">
+            <div class="what-container">
+
+                <h2 class="m-heading text-center"><span class="text-primary">What</span> I Do</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fab fa-computer fa-2x"></i>
+                    <div>
+                        <h3> Front-End Development</h3>
+                        <p> I build and deploy awesome user interfaces via code, with proficient knowledge of
+                            HTML, CSS, diversifying as much as i can with creativity .</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fab fa-pencil-paintbrush fa-2x"></i>
+                    <div>
+                        <h3> UI/UX Design</h3>
+                        <p> Design of both large and small scale applications, and also advanced prototyping
+                            of the said designs.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fab fa-globe fa-2x"></i>
+                    <div>
+                        <h3> UX Reserach</h3>
+                        <p> User cases research and also mining information on current trends in the design
+                            industry, and also implementing the results of these findings in new designs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+            
+
+        </section>
+
+        <!-- Skills--------------------------->
+        <section id="skill">
+            <div class="skill-img"></div>
+            <div class="skill-text bg-dark p-2">
+                <h2 class="m-heading">Creativity & Skill set </h2>
+            <p> I usually begin from Problem Framing, then analysis, and then properly itemizing stuff
+                that i choose to brainstorm on, wire-framing solutions, designing and prototyping those wire-frames,
+                then finally implementing those solutions.
+            </p>
+                <h3> Skills</h3>
+                <ul class="list">
+                  <li>UI Design</li>
+                  <li>UX Research</li>
+                  <li>Rapid Prototyping</li>
+                  <li>Wireframing</li>  
+                  <li>Neumorphic Designs</li>  
+                    
+                </ul>
+            </div>
+
+
+        </section>
+
+        <!--Works----------------------------------------->
 
         <div class="works-container" id="working">
 
@@ -104,7 +176,7 @@
 
     <!---contact me---------------------------------------------------->
 
-        <div class="contact-container" id=""> 
+        <div class="contact-container" id="contact"> 
             <form class="contact-form" name="contact" method="POST" data-netlify="true">
                 <div class="title"> Contact Me</div> 
 
