@@ -620,7 +620,7 @@ label{
     color:  #ffbe64;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email] select, textarea {
     background: transparent;
     width: 500px;
     padding: 12px 8px;
