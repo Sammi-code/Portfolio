@@ -1,4 +1,4 @@
 
 setTimeout(()=>{
      location.assign("main.html")
- }, 5000)
+ }, 2000)
